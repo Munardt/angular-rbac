@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="header-toolbar">
+  <div class="header-container">
+    <a mat-button routerLink="/home">Home</a>
+    <a mat-button routerLink="/sobre">Sobre</a>
+    <a mat-button routerLink="/projeto">Projeto</a>
+
+    <button mat-button [matMenuTriggerFor]="menuMais">
+      Mais
+      <mat-icon>expand_more</mat-icon>
+    </button>
+    <mat-menu #menuMais="matMenu">
+      <button mat-menu-item>Opção 1</button>
+      <button mat-menu-item>Opção 2</button>
+    </mat-menu>
+
+    <span class="spacer"></span>
+
+    <mat-slide-toggle
+      color="primary"
+      (change)="toggleTheme($event)"
+      aria-label="Alternar tema"
+    >
+      <img
+        [src]="isDarkTheme ? lightModeIcon : darkModeIcon"
+        alt="Alternar Tema"
+      />
+    </mat-slide-toggle>
+  </div>
+</mat-toolbar>

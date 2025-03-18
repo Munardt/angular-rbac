@@ -1,0 +1,22 @@
+.header-toolbar {
+  padding: 0 1rem;
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  a[mat-button] {
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-transform: none;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  mat-slide-toggle {
+    margin-left: auto;
+  }
+}

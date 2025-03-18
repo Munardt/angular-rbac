@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
+  isDarkTheme = false;
+
+  toggleTheme(): void {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
   title = 'angular-rbac';
 }

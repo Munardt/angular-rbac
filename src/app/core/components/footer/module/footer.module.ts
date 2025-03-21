@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { FooterComponent } from './footer.component';
-import { MaterialModule } from '../../../shared/modules/material/material.module';
+import { MaterialModule } from '@shared/modules/material/material.module';
+
+import { FooterComponent } from '../layout/footer.component';
 
 @NgModule({
   declarations: [FooterComponent],

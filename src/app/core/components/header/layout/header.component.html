@@ -15,15 +15,18 @@
 
     <span class="spacer"></span>
 
-    <mat-slide-toggle
-      color="primary"
+    <!-- <mat-slide-toggle
+      color="accent"
       (change)="toggleTheme($event)"
+      [checked]="isLightTheme"
       aria-label="Alternar tema"
-    >
+    > -->
+    <button mat-icon-button (click)="toggleTheme()">
       <img
-        [src]="isDarkTheme ? lightModeIcon : darkModeIcon"
+        [src]="isLightTheme ? darkModeIcon : lightModeIcon"
         alt="Alternar Tema"
       />
-    </mat-slide-toggle>
+    </button>
+    <!-- </mat-slide-toggle> -->
   </div>
 </mat-toolbar>

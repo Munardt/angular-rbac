@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { AppRoutes } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
-import { FooterModule } from '../components/footer/footer.module';
-import { HeaderModule } from '../components/header/header.module';
+import { FooterModule } from 'app/core/components/footer/module/footer.module';
+import { HeaderModule } from 'app/core/components/header/module/header.module';
+
+import { AppComponent } from '../layout/app.component';
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [AppComponent],
